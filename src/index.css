@@ -6,55 +6,55 @@
 
 @layer base {
   :root {
-    --background: 220 16% 4%;
-    --foreground: 220 10% 92%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 8%;
 
-    --card: 220 14% 7%;
-    --card-foreground: 220 10% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 220 14% 7%;
-    --popover-foreground: 220 10% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 160 60% 45%;
-    --primary-foreground: 220 16% 4%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 12% 12%;
-    --secondary-foreground: 220 10% 75%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 220 12% 12%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 260 50% 55%;
-    --accent-foreground: 260 90% 95%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 8%;
 
     --destructive: 0 70% 50%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 12% 14%;
-    --input: 220 12% 14%;
-    --ring: 160 60% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 8%;
 
-    --radius: 0.75rem;
+    --radius: 0px;
 
-    --model-a: 160 60% 45%;
-    --model-b: 260 50% 55%;
-    --orchestrator: 35 80% 55%;
-    --debate: 200 70% 50%;
+    --model-a: 0 0% 8%;
+    --model-b: 0 0% 35%;
+    --orchestrator: 0 0% 20%;
+    --debate: 0 0% 50%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 8%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border rounded-none;
   }
 
   body {
@@ -76,7 +76,6 @@
 }
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--border));
-  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--muted-foreground));
