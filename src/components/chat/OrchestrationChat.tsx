@@ -150,7 +150,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
         <div className="flex items-center gap-1">
           <button
             onClick={() => setShowSettings(!showSettings)}
-            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            className="p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
           >
             <Settings2 className="w-4 h-4" />
           </button>
@@ -184,7 +184,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
               <span className="w-3 h-3 rounded-full bg-model-b animate-pulse-dot" style={{ animationDelay: "0.5s" }} />
             </div>
             <div className="w-full max-w-2xl">
-              <div className="relative bg-card border border-border rounded-2xl focus-within:ring-1 focus-within:ring-ring transition-shadow">
+              <div className="relative bg-card border border-border focus-within:ring-1 focus-within:ring-ring transition-shadow">
                 <textarea
                   ref={textareaRef}
                   value={input}
@@ -196,7 +196,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                 />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary text-xs text-muted-foreground">
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 bg-secondary text-xs text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-model-a" />
                       <span className="w-1.5 h-1.5 rounded-full bg-model-b" />
                       Agent
@@ -206,13 +206,13 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                     <span className="text-[10px] text-muted-foreground/30">⊙ High Fast</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                    <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                       <ImageIcon className="w-4 h-4" />
                     </button>
                     <button
                       onClick={handleSend}
                       disabled={!input.trim()}
-                      className="p-1.5 rounded-full bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
+                      className="p-1.5 bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
                     >
                       <ArrowUp className="w-4 h-4" />
                     </button>
@@ -221,7 +221,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
               </div>
               <div className="flex justify-start mt-2 px-1">
                 <span className="text-[10px] text-muted-foreground/30 flex items-center gap-1.5">
-                  <span className="inline-block w-3 h-3 border border-muted-foreground/20 rounded text-[8px] flex items-center justify-center">⊞</span>
+                  <span className="inline-block w-3 h-3 border border-muted-foreground/20 text-[8px] flex items-center justify-center">⊞</span>
                   Local
                   <ChevronDown className="w-2.5 h-2.5" />
                 </span>
@@ -245,7 +245,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
       {!isEmpty && (
         <div className="border-t border-border p-3 shrink-0">
           <div className="max-w-2xl mx-auto">
-            <div className="relative bg-card border border-border rounded-xl focus-within:ring-1 focus-within:ring-ring transition-shadow">
+            <div className="relative bg-card border border-border focus-within:ring-1 focus-within:ring-ring transition-shadow">
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
@@ -256,16 +256,16 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                 disabled={phase !== "idle"}
               />
               <div className="absolute right-2 bottom-1.5 flex items-center gap-1.5">
-                <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                   <RotateCcw className="w-3.5 h-3.5" />
                 </button>
-                <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                   <ImageIcon className="w-3.5 h-3.5" />
                 </button>
                 <button
                   onClick={handleSend}
                   disabled={!input.trim() || phase !== "idle"}
-                  className="p-1.5 rounded-full bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
+                  className="p-1.5 bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
                 >
                   <ArrowUp className="w-3.5 h-3.5" />
                 </button>

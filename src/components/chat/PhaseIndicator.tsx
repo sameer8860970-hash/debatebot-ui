@@ -16,7 +16,7 @@ export function PhaseIndicator({ currentPhase }: { currentPhase: Phase }) {
   const currentIndex = phases.indexOf(currentPhase);
 
   return (
-    <div className="flex items-center gap-1 px-4 py-2.5 bg-card border border-border rounded-lg">
+    <div className="flex items-center gap-1 px-4 py-2.5 bg-card border border-border">
       {phases.map((phase, i) => {
         const config = phaseConfig[phase];
         const isActive = phase === currentPhase;
@@ -25,7 +25,7 @@ export function PhaseIndicator({ currentPhase }: { currentPhase: Phase }) {
         return (
           <div key={phase} className="flex items-center gap-1">
             <motion.div
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium transition-colors ${
+              className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium transition-colors ${
                 isActive
                   ? `${config.color} bg-secondary`
                   : isDone

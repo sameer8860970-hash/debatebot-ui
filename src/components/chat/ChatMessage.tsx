@@ -52,13 +52,13 @@ export function ChatMessage({ message }: { message: Message }) {
           </div>
         )}
         <div
-          className={`px-4 py-3 rounded-xl border ${
+          className={`px-4 py-3 border ${
             isUser
               ? "bg-secondary border-border text-foreground"
               : `bg-card ${config.borderColor}`
           }`}
         >
-          <div className="prose prose-sm prose-invert max-w-none text-sm leading-relaxed [&_p]:text-foreground [&_code]:text-primary [&_code]:bg-secondary [&_code]:px-1 [&_code]:py-0.5 [&_code]:rounded [&_code]:text-xs [&_code]:font-mono">
+          <div className="prose prose-sm max-w-none text-sm leading-relaxed [&_p]:text-foreground [&_code]:text-primary [&_code]:bg-secondary [&_code]:px-1 [&_code]:py-0.5 [&_code]:text-xs [&_code]:font-mono">
             <ReactMarkdown>{message.content}</ReactMarkdown>
           </div>
         </div>
