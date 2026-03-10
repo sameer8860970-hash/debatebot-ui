@@ -30,7 +30,7 @@ export function ModelSelector({ modelA, modelB, onModelAChange, onModelBChange }
             const m = availableModels.find((x) => x.id === e.target.value);
             if (m) onModelAChange(m);
           }}
-          className="w-full bg-secondary border border-border rounded-md px-3 py-1.5 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-ring"
+          className="w-full bg-secondary border border-border px-3 py-1.5 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-ring"
         >
           {availableModels.map((m) => (
             <option key={m.id} value={m.id}>{m.name}</option>
