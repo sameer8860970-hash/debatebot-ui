@@ -43,7 +43,7 @@ export function ChatSidebar({ sessions, activeSession, onSelectSession, onNewCha
       <SidebarHeader className="p-3">
         <button
           onClick={onNewChat}
-          className="flex items-center gap-2 w-full px-3 py-2 rounded-lg text-sm font-medium text-foreground hover:bg-secondary transition-colors"
+          className="flex items-center gap-2 w-full px-3 py-2 text-sm font-medium text-foreground hover:bg-secondary transition-colors"
         >
           <Plus className="w-4 h-4" />
           <span className="group-data-[collapsible=icon]:hidden">New Chat</span>

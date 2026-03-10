@@ -25,7 +25,7 @@ export function PhaseIndicator({ currentPhase }: { currentPhase: Phase }) {
         return (
           <div key={phase} className="flex items-center gap-1">
             <motion.div
-              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium transition-colors ${
+              className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium transition-colors ${
                 isActive
                   ? `${config.color} bg-secondary`
                   : isDone
