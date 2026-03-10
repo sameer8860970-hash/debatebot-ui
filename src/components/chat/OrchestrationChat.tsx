@@ -206,7 +206,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                     <span className="text-[10px] text-muted-foreground/30">⊙ High Fast</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                    <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                       <ImageIcon className="w-4 h-4" />
                     </button>
                     <button
