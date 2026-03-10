@@ -245,7 +245,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
       {!isEmpty && (
         <div className="border-t border-border p-3 shrink-0">
           <div className="max-w-2xl mx-auto">
-            <div className="relative bg-card border border-border rounded-xl focus-within:ring-1 focus-within:ring-ring transition-shadow">
+            <div className="relative bg-card border border-border focus-within:ring-1 focus-within:ring-ring transition-shadow">
               <textarea
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
