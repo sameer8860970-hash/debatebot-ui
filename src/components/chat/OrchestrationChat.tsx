@@ -221,7 +221,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
               </div>
               <div className="flex justify-start mt-2 px-1">
                 <span className="text-[10px] text-muted-foreground/30 flex items-center gap-1.5">
-                  <span className="inline-block w-3 h-3 border border-muted-foreground/20 rounded text-[8px] flex items-center justify-center">⊞</span>
+                  <span className="inline-block w-3 h-3 border border-muted-foreground/20 text-[8px] flex items-center justify-center">⊞</span>
                   Local
                   <ChevronDown className="w-2.5 h-2.5" />
                 </span>
