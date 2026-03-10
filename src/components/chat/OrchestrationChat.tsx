@@ -150,7 +150,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
         <div className="flex items-center gap-1">
           <button
             onClick={() => setShowSettings(!showSettings)}
-            className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
+            className="p-2 text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
           >
             <Settings2 className="w-4 h-4" />
           </button>
