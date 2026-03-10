@@ -184,7 +184,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
               <span className="w-3 h-3 rounded-full bg-model-b animate-pulse-dot" style={{ animationDelay: "0.5s" }} />
             </div>
             <div className="w-full max-w-2xl">
-              <div className="relative bg-card border border-border rounded-2xl focus-within:ring-1 focus-within:ring-ring transition-shadow">
+              <div className="relative bg-card border border-border focus-within:ring-1 focus-within:ring-ring transition-shadow">
                 <textarea
                   ref={textareaRef}
                   value={input}
