@@ -256,10 +256,10 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                 disabled={phase !== "idle"}
               />
               <div className="absolute right-2 bottom-1.5 flex items-center gap-1.5">
-                <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                   <RotateCcw className="w-3.5 h-3.5" />
                 </button>
-                <button className="p-1.5 rounded-md text-muted-foreground/40 hover:text-muted-foreground transition-colors">
+                <button className="p-1.5 text-muted-foreground/40 hover:text-muted-foreground transition-colors">
                   <ImageIcon className="w-3.5 h-3.5" />
                 </button>
                 <button
