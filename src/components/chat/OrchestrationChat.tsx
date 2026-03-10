@@ -265,7 +265,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                 <button
                   onClick={handleSend}
                   disabled={!input.trim() || phase !== "idle"}
-                  className="p-1.5 rounded-full bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
+                  className="p-1.5 bg-foreground text-background disabled:opacity-20 hover:opacity-80 transition-opacity"
                 >
                   <ArrowUp className="w-3.5 h-3.5" />
                 </button>
