@@ -196,7 +196,7 @@ export function OrchestrationChat({ messages, setMessages, onFirstMessage }: Orc
                 />
                 <div className="absolute bottom-2 left-2 right-2 flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-secondary text-xs text-muted-foreground">
+                    <div className="flex items-center gap-1.5 px-2.5 py-1 bg-secondary text-xs text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-model-a" />
                       <span className="w-1.5 h-1.5 rounded-full bg-model-b" />
                       Agent
